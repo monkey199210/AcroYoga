@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+  use_frameworks!
+target 'AcroYoga' do
+
+    pod 'AnimatedTextInput', :path => '../'
+pod 'Alamofire', '~> 3.4'
+pod 'AlamofireImage', '~> 2.0'
+pod 'MRProgress'
+pod 'Genome', '~> 1.0.0'
+pod 'BrightFutures'
+pod 'SwiftyJSON'
+pod 'Signals', '~> 2.0'
+pod 'HanekeSwift'
+pod 'AsyncSwift'
+pod "Koloda"
+end

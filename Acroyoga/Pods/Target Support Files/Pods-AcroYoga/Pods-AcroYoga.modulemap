@@ -1,0 +1,6 @@
+framework module Pods_AcroYoga {
+  umbrella header "Pods-AcroYoga-umbrella.h"
+
+  export *
+  module * { export * }
+}
