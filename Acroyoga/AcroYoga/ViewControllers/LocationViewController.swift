@@ -1,6 +1,6 @@
 //
 //  LocationViewController.swift
-//  TurnUP
+//  AcroYoga
 //
 //  Created by SCAR on 3/20/16.
 //  Copyright © 2016 ku. All rights reserved.
@@ -39,23 +39,23 @@ class LocationViewController : UIViewController, CLLocationManagerDelegate,MKMap
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
         
         self.map.setRegion(region, animated: true)
-//        let information = MKPointAnnotation()
-//        information.coordinate = center
-//        information.title = "Location!"
-//        information.subtitle = "current position"
-//        
-//        self.map.addAnnotation(information)
+        //        let information = MKPointAnnotation()
+        //        information.coordinate = center
+        //        information.title = "Location!"
+        //        information.subtitle = "current position"
+        //
+        //        self.map.addAnnotation(information)
         
     }
     @IBAction func btn_Next_Click(sender: AnyObject) {
         
-//        let app = UIApplication.sharedApplication().delegate as? AppDelegate
-//       
-//            let vc = self.storyboard!.instantiateViewControllerWithIdentifier("MainViewController")
-//            app!.setRootViewController(vc)
+        //        let app = UIApplication.sharedApplication().delegate as? AppDelegate
+        //
+        //            let vc = self.storyboard!.instantiateViewControllerWithIdentifier("MainViewController")
+        //            app!.setRootViewController(vc)
         let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
         
-        appDelegate!.loadPageController()
+        appDelegate!.loadPageController(false)
         
         
     }

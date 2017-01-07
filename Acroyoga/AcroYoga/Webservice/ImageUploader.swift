@@ -28,31 +28,32 @@ class UploadTaskDelegate : NSObject, NSURLSessionTaskDelegate {
 class ImageUploader {
     static var uploadTaskDelegate = UploadTaskDelegate()
     class func uploadImage(uploadUrl: String, params: [String: String], imageData: NSData, progressCallback: (Double->Void)?) -> Future<Bool, NSError> {
+        print(uploadUrl)
         let promise = Promise<Bool, NSError>()
         let myUrl = NSURL(string: uploadUrl)
         let request = NSMutableURLRequest(URL:myUrl!)
         request.HTTPMethod = "POST";
-            let boundary = generateBoundaryString()
-            request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-            request.HTTPBody = createBodyWithParameters(params, filePathKey: "file", imageDataKey: imageData, boundary: boundary)
-            let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: ImageUploader.uploadTaskDelegate, delegateQueue: nil)
-            ImageUploader.uploadTaskDelegate.progressCallbacks[session] = progressCallback
-            let task = session.dataTaskWithRequest(request) {
-                data, response, error in
-                if error != nil {
-                    print("error=\(error)")
-                    promise.failure(error!)
-                }else{
-                    // You can print out response object
-                    print("******* response = \(response)")
-                    // Print out reponse body
-                    let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                    print("****** response data = \(responseString!)")
-                    promise.success(true)
-                }
-                ImageUploader.uploadTaskDelegate.progressCallbacks[session] = nil
+        let boundary = generateBoundaryString()
+        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        request.HTTPBody = createBodyWithParameters(params, filePathKey: "file", imageDataKey: imageData, boundary: boundary)
+        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: ImageUploader.uploadTaskDelegate, delegateQueue: nil)
+        ImageUploader.uploadTaskDelegate.progressCallbacks[session] = progressCallback
+        let task = session.dataTaskWithRequest(request) {
+            data, response, error in
+            if error != nil {
+                print("error=\(error)")
+                promise.failure(error!)
+            }else{
+                // You can print out response object
+                print("******* response = \(response)")
+                // Print out reponse body
+                let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                print("****** response data = \(responseString!)")
+                promise.success(true)
             }
-            task.resume()
+            ImageUploader.uploadTaskDelegate.progressCallbacks[session] = nil
+        }
+        task.resume()
         return promise.future
     }
     private class func createBodyWithParameters(parameters: [String: String]?, filePathKey: String?, imageDataKey: NSData, boundary: String) -> NSData {

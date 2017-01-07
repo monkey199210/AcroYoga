@@ -14,12 +14,15 @@ import BrightFutures
 import Async
 struct AYNet {
     
+    static let baseUrl = "https://maps.googleapis.com/maps/api/geocode/json?"
+    static let apikey = "AIzaSyDJB1td3VUEUGwakZ4yehMLn_66luNweAY"
+    
     static let  INFO_TO_DETAIL = "goodsinfo_to_detail"
     static let  INFO_TO_MESSAGE = "go to Message"
     static let INFO_TO_CHAT = "go_to_chat"
     
     static let  me = "http://www.myacroyoga.com/AcroYoga/me.php"
-    static let  SEARCH_URL = "http://www.myacroyoga.com/AcroYoga/locationInfo.php"
+    static let  SEARCH_URL = "http://www.myacroyoga.com/AcroYoga/search_users.php"
     static let  UPLOADPROFILE_URL = "http://www.myacroyoga.com/AcroYoga/uploaddata.php"
     static let UPLOADPROFILEIMAGE_URL = "http://www.myacroyoga.com/AcroYoga/uploadimg.php"
     static let NOTIFICATION_URL = "http://www.myacroyoga.com/AcroYoga/notification.php"
@@ -31,9 +34,9 @@ struct AYNet {
     
     static let LOADRATING_URL = "http://www.myacroyoga.com/AcroYoga/check_rating.php"
     static let INSERTRATING_URL = "http://www.myacroyoga.com/AcroYoga/insertrating.php"
-
-    static let Insert_chartmessage_URL = "http://www.myacroyoga.com/chatting/Insert_chartmessage.php"
-    static let check_chartting_message = "http://www.myacroyoga.com/chatting/check_chartting_message.php"
+    
+    static let Insert_chatmessage_URL = "http://www.myacroyoga.com/chatting/Insert_chatmessageios.php"
+    static let check_chatting_message = "http://www.myacroyoga.com/chatting/check_chatting_messageios.php"
     static let UPLOAD_PROFILEIMAGE1 = "http://www.myacroyoga.com/AcroYoga/upload_profileImage.php"
     
     
@@ -62,7 +65,24 @@ struct AYNet {
     static let KEY_HIDE = "key_hide"
     static let KEY_READY = "key_ready"
     static let KEY_RATE = "key_rate"
+    static let KEY_DEVICE_TOKEN = "key_device_token"
     
+    static let KEY_LATITUDE = "key_lat"
+    static let KEY_LONGITUDE = "key_long"
+    static let KEY_SEARCH_DISTANCE = "search_distance"
+    static let KEY_SEARCH_BASE = "search_base"
+    static let KEY_SEARCH_FLY = "search_fly"
+    static let KEY_SEARCH_BOTH = "search_both"
+    static let KEY_SEARCH_LBASING = "search_lbasing"
+    static let KEY_SEARCH_WHIP = "search_whip"
+    static let KEY_SEARCH_POP = "search_pop"
+    static let KEY_SEARCH_HAND = "search_hand"
+    static let KEY_SEARCH_ACROTYPE = "search_acrotype"
+    static let KEY_SEARCH_EXPERIENCE = "search_experience"
+    static let KEY_MESSAGE_SENDERID = "Chatting_meId"
+    static let KEY_MESSAGE_RECEIVERID = "Chatting_youId"
+    static let KEY_MESSAGE_TEXT = "Chatting_msg"
+    static let KEY_MESSAGE_DATE = "Chatting_date"
 }
 class WebResult<T> {
     var value: T?
@@ -88,56 +108,30 @@ class Webservice {
             throw ConvertingError.UnableToConvertJson
         }
     }
-
+    
     
     class func request<T: BasicMappable>(urlString: String, params: [String: AnyObject]?, animated: Bool) -> Future<WebResult<T>, NSError> {
         print(urlString)
         
         let promise = Promise<WebResult<T>, NSError>()
-         showBlocking(animated)
+        //         showBlocking(animated)
         Alamofire.request(.POST, urlString, parameters: params).responseJSON { (response) -> Void in
             Async.background {
                 //let dataString = NSString(data: response.data!, encoding: NSUTF8StringEncoding)
                 //print(dataString)
                 mapResult(response, promise: promise)
                 }.main{
-                    closeBlocking(animated)
+                    //                    closeBlocking(animated)
             }
         }
         return promise.future
     }
-//    class func upload<T: BasicMappable>(urlString: String, image: NSData, params: [String: AnyObject]?, animated: Bool) -> Future<WebResult<T>, NSError> {
-//        print(urlString)
-//        
-//        let promise = Promise<WebResult<T>, NSError>()
-//        let urlRequest = urlRequestWithComponents(urlString, parameters: params, imageData: image)
-//        showBlocking(animated)
-//        Alamofire.request(.POST, urlString, parameters: params).responseJSON { (response) -> Void in
-//            Async.background {
-//                //let dataString = NSString(data: response.data!, encoding: NSUTF8StringEncoding)
-//                //print(dataString)
-//                mapResult(response, promise: promise)
-//                }.main{
-//                    closeBlocking(animated)
-//            }
-//        }
-//        
-//        
-//        Alamofire.upload(urlRequest.0, urlRequest.1)
-//            .progress { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) in
-//                println("\(totalBytesWritten) / \(totalBytesExpectedToWrite)")
-//            }
-//            .responseJSON { (request, response, JSON, error) in
-//                println("REQUEST \(request)")
-//                println("RESPONSE \(response)")
-//                println("JSON \(JSON)")
-//                println("ERROR \(error)")
-//        }
-//        return promise.future
-//    }
+    
+    
+    
     class func uplaodImageData<T: BasicMappable>(RequestURL: String,postData:[String:AnyObject]?, animated: Bool) -> Future<WebResult<T>, NSError>  {
         let promise = Promise<WebResult<T>, NSError>()
-//        let headerData:[String : String] = ["Content-Type":"application/json"]
+        //        let headerData:[String : String] = ["Content-Type":"application/json"]
         
         Alamofire.request(.POST,RequestURL, parameters: postData, encoding: .URLEncodedInURL).responseJSON{ response in
             Async.background {
@@ -147,7 +141,7 @@ class Webservice {
                 }.main{
                     closeBlocking(animated)
             }
-        
+            
         }
         return promise.future
     }
@@ -254,7 +248,7 @@ class Webservice {
         // return URLRequestConvertible and NSData
         return (Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: nil).0, uploadData)
     }
-
+    
 }
 //extension String {
 //    static func FBURL(urlString: String) -> String {

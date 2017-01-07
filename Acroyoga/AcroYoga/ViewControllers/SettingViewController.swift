@@ -1,6 +1,6 @@
 //
 //  SettingViewController.swift
-//  TurnUP
+//  AcroYoga
 //
 //  Created by SCAR on 3/21/16.
 //  Copyright © 2016 ku. All rights reserved.
@@ -79,7 +79,9 @@ class SettingViewController: UIViewController {
         defaults.synchronize()
         let readyFlag = readySwitch.on ? "1" : "0"
         let hideFlag = hideSwitch.on ? "1" : "0"
-        let params = [ AYNet.USERFACEBOOKID: UserProfile.userProfile.user?.facebookid as! AnyObject,
+        if let user = UserProfile.currentUser()
+        {
+        let params = [ AYNet.USERFACEBOOKID: user.facebookid as! AnyObject,
                        AYNet.KEY_HIDE: hideFlag as AnyObject,
                        AYNet.KEY_READY: readyFlag as AnyObject]
         Net.requestServer(AYNet.UPLOADSETTING_URL, params:params).onSuccess(callback: { (enabled) -> Void in
@@ -87,13 +89,14 @@ class SettingViewController: UIViewController {
                 defaults.setBool( self.readySwitch.on, forKey: AYNet.KEY_READY)
                 defaults.setBool(self.hideSwitch.on, forKey: AYNet.KEY_HIDE)
                 defaults.synchronize()
+                FBEvent.settingChange(true)
             })
             
             self.dismissViewControllerAnimated(true, completion: nil)
         }).onFailure { (error) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
         }
-
+        }
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }

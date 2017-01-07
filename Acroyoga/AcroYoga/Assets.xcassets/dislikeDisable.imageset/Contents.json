@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "likeButton.png",
+      "filename" : "dislikeButtonDisable.png",
       "scale" : "1x"
     },
     {

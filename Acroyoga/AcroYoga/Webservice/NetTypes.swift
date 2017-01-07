@@ -30,45 +30,7 @@ struct AYUser : BasicMappable {
     private(set) var ready: String = "0"
     private(set) var hide: String = "0"
     private(set) var phoneNumber: String = ""
-//    struct UserGeneral : BasicMappable {
-//        private(set) var username: String = ""
-//        private(set) var gender: String?
-//        private(set) var age: String?
-//        private(set) var dateOfBirth: String?
-//        private(set) var starsign: String?
-//        private(set) var country: String = ""
-//        private(set) var town: String?
-//        private(set) var description: String = ""
-////        private(set) var email: FBEmail!
-//        private(set) var phone: String = ""
-//        mutating func sequence(map: Map) throws {
-//            try username <~ map["username"]
-//            try gender <~ map["gender"]
-//            try age <~ map["age"]
-//            try dateOfBirth <~ map["dateOfBirth"]
-//            try starsign <~ map["starsign"]
-//            try country <~ map["country"]
-//            try town <~ map["town"]
-//            try description <~ map["description"]
-//            try phone <~ map["phone"]
-//        }
-//    }
-//    private(set) var general: UserGeneral!
-//    
-//    struct UserLife : BasicMappable {
-//        private(set) var occupation: String = ""
-//        private(set) var education: String = ""
-//        private(set) var profession: String = ""
-//        mutating func sequence(map: Map) throws {
-//            try occupation <~ map["occupation"]
-//            try education <~ map["education"]
-//            try profession <~ map["profession"]
-//        }
-//    }
-//    private(set) var life: UserLife!
-//    
-//    private(set) var pictures: Array<String>?
-//    private(set) var premium: Bool = false
+    
     mutating func sequence(map: Map) throws {
         
         try username <~ map["name"]
@@ -94,11 +56,42 @@ struct AYUser : BasicMappable {
         try hide <~ map["hide"]
     }
 }
+struct AYMessage : BasicMappable {
+    private(set) var uid: String = ""
+    private(set) var date: String = ""
+    private(set) var text: String = ""
+    private(set) var readflag: String = ""
+    var unreadMessages: AnyObject? = 0
+    mutating func sequence(map: Map) throws {
+        try uid <~ map["facebookid"]
+        try date <~ map["date"]
+        try text <~ map["text"]
+        try readflag <~ map["read_flag"]
+    }
+}
 struct AYResult : BasicMappable {
-//    private(set) var status: Int = 0
+    //    private(set) var status: Int = 0
     private(set) var message: String = ""
     mutating func sequence(map: Map) throws {
-//        try status <~ map["status"]
+        //        try status <~ map["status"]
         try message <~ map["msg"]
     }
+}
+struct FBFriends : BasicMappable {
+    struct friend : BasicMappable {
+        private(set) var uid: String = ""
+        private(set) var name: String = ""
+        var unreadMessages: AnyObject? = 0
+        mutating func sequence(map: Map) throws {
+            try uid <~ map["id"]
+            try name <~ map["name"]
+        }
+    }
+    private(set) var data: [friend] = []
+    
+    mutating func sequence(map: Map) throws {
+        
+        try data <~ map["data"]
+    }
+    
 }

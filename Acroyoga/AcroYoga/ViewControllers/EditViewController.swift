@@ -1,31 +1,30 @@
 //
 //  EditViewController.swift
-//  TurnUP
+//  AcroYoga
 //
 //  Created by SCAR on 3/21/16.
 //  Copyright © 2016 ku. All rights reserved.
 //
 
 import UIKit
-import AVFoundation
-import MediaPlayer
 import AnimatedTextInput
+import MRProgress
 
-class EditViewController: BaseViewController, UIAlertViewDelegate ,UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate,
-AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate, UIScrollViewDelegate {
-        @IBOutlet var textInputs: [AnimatedTextInput]!
+class EditViewController: UIViewController,  FusumaDelegate {
+    @IBOutlet var textInputs: [AnimatedTextInput]!
     @IBOutlet weak var image0: UIImageView!
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var introTextView: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var plusPhotoBtn1: UIButton!
     
     @IBOutlet weak var plusPhotoBtn2: UIButton!
     
     @IBOutlet weak var plusPhotoBtn3: UIButton!
-
+    
     @IBOutlet var loadingIndicators: [UIActivityIndicatorView]!
     @IBOutlet weak var flycheckBox: VKCheckbox!
     @IBOutlet weak var weightLabel: UILabel!
@@ -37,28 +36,23 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
     @IBOutlet weak var whipCheck: VKCheckbox!
     @IBOutlet weak var popCheck: VKCheckbox!
     @IBOutlet weak var bothCheck: VKCheckbox!
-      var mediaPicker: MPMediaPickerController?
-    var audioRecorder: AVAudioRecorder?
-    var audioPlayer: AVAudioPlayer?
     
-      var controller: UIImagePickerController?
     var btnIndex:NSInteger = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-               UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         self.configureScrollView()
-        self.addSlideMenuButton()
         self.initImageViews()
         configure()
-
+        
     }
     
     func configure()
     {
-                if let user = UserProfile.currentUser() {
+        if let user = UserProfile.currentUser() {
             configureWithUser(user)
         }
         FBEvent.onProfileReceived().listen(self, callback: { [unowned self] (user) -> Void in
@@ -68,14 +62,14 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
     }
     func configureWithUser(pUser: AYUser)
     {
-//        ratingView.value = CGFloat((pUser.rate as NSString).floatValue)
+        //        ratingView.value = CGFloat((pUser.rate as NSString).floatValue)
         textInputs[0].text = pUser.username
         textInputs[1].text = pUser.phoneNumber
         textInputs[2].text = pUser.description
-//        if pUser.description != ""
-//        {
-//            descriptionTextField.text = pUser.description
-//        }
+        //        if pUser.description != ""
+        //        {
+        //            descriptionTextField.text = pUser.description
+        //        }
         if let img1 = pUser.profileMainImage {
             loadingIndicators[0].startAnimating()
             loadingIndicators[0].hidden = false
@@ -113,7 +107,7 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
             flycheckBox.setOn(true)
             weightLabel.hidden = false
             weightTextView.hidden = false
-           
+            
         }
         if pUser.base == "0"
         {
@@ -157,18 +151,24 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
         }else{
             bothCheck.setOn(true)
         }
-
+        
     }
     func configureScrollView()
     {
+        let screenRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenRect.size.width
         
+        //Setting the right content size - only height is being calculated depenging on content.
+        let height = self.bothCheck.frame.maxY + 30
+        let contentSize = CGSizeMake(screenWidth, 800);
+        self.scrollView.contentSize = contentSize;
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(EditViewController.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(EditViewController.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil)
-
+        
     }
     
     func initImageViews()
@@ -178,8 +178,8 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
         {
             loadingIndicators[i].hidden = true
         }
-
-//        makeRoundTextView(introTextView)
+        
+        //        makeRoundTextView(introTextView)
         image0.layer.cornerRadius = 7.0
         image0.clipsToBounds = true
         image1.layer.cornerRadius = 7.0
@@ -191,7 +191,7 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
         plusPhotoBtn2.layer.cornerRadius = plusPhotoBtn2.frame.size.height/2
         plusPhotoBtn3.layer.cornerRadius = plusPhotoBtn3.frame.size.height/2
         
-       textInputs[0].accessibilityLabel = "standard_text_input"
+        textInputs[0].accessibilityLabel = "standard_text_input"
         textInputs[0].placeHolderText = "Full Name"
         
         textInputs[1].placeHolderText = "Phone Number"
@@ -215,9 +215,10 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
     }
     
     @IBAction func backAction(sender: AnyObject) {
+        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
     func makeRoundImage(imageView:UIImageView)
     {
         let maskPath = UIBezierPath.init(roundedRect: imageView.bounds, byRoundingCorners: UIRectCorner.AllCorners, cornerRadii: CGSizeMake(7.0, 7.0))
@@ -225,110 +226,81 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
         maskLayer.frame = imageView.bounds;
         maskLayer.path = maskPath.CGPath
         imageView.layer.mask = maskLayer
-
+        
     }
-
-   
+    
+    
     @IBAction func btn_AddMusic_Click(sender: AnyObject) {
         btnIndex = sender.tag
         
-        let alertController = UIAlertController(title:nil, message:
-            nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-            // ...
-            
-        }
-        
-        let galleryAction = UIAlertAction(title: "Music Library", style: .Default) { (action) in
-            self.displayMediaPickerAndPlayItem()
-        }
-        
-        alertController.addAction(galleryAction)
-        alertController.addAction(cancelAction)
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
+//        let alertController = UIAlertController(title:nil, message:
+//            nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+//        
+//        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+//            // ...
+//            
+//        }
+//        
+//        let galleryAction = UIAlertAction(title: "Music Library", style: .Default) { (action) in
+//            self.displayMediaPickerAndPlayItem()
+//        }
+//        
+//        alertController.addAction(galleryAction)
+//        alertController.addAction(cancelAction)
+//        
+//        self.presentViewController(alertController, animated: true, completion: nil)
         
         
     }
-
+    
     @IBAction func btnAdd_Click(sender: AnyObject) {
         
         btnIndex = sender.tag
+//        
+//        let alertController = UIAlertController(title: nil, message:
+//            nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+//        
+//        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+//            // ...
+//        }
+//        
+//        let photoAction = UIAlertAction(title: "Camera Roll", style: .Default) { (action) in
+//            // ...
+//            self.takePhoto()
+//        }
+//        
+//        let galleryAction = UIAlertAction(title: "Gallery", style: .Default) { (action) in
+//            self.gallery()
+//        }
+//        
+//        alertController.addAction(photoAction)
+//        alertController.addAction(galleryAction)
+//        alertController.addAction(cancelAction)
+//        
+//        self.presentViewController(alertController, animated: true, completion: nil)
+        let fusuma = FusumaViewController()
         
-        let alertController = UIAlertController(title: nil, message:
-            nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        //        fusumaCropImage = false
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-            // ...
-        }
-        
-        let photoAction = UIAlertAction(title: "Camera Roll", style: .Default) { (action) in
-            // ...
-            self.takePhoto()
-        }
-        
-        let galleryAction = UIAlertAction(title: "Gallery", style: .Default) { (action) in
-            self.gallery()
-        }
-        
-        alertController.addAction(photoAction)
-        alertController.addAction(galleryAction)
-        alertController.addAction(cancelAction)
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
+        fusuma.delegate = self
+        self.presentViewController(fusuma, animated: true, completion: nil)
     }
     
-    func addBtn_Click(btnIndex:Int)
-    {
+    func fusumaImageSelected(image: UIImage) {
         
-    }
-    
-    func takePhoto()
-    {
-         let imagePicker = UIImagePickerController()
-        if(UIImagePickerController.isSourceTypeAvailable(.Camera)){
-            if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear)==nil{
-//                Alert.Warning(self,message: "Rear Camera doesn't exist Application can not access the camera")
-                
-            }else
-            {
-                imagePicker.sourceType = .Camera
-                imagePicker.allowsEditing=true
-                imagePicker.delegate=self
-                
-                presentViewController(imagePicker, animated: true, completion: {})
-                
-            }
-            
-        }else{
-
-        }
-    }
-    
-    func gallery()
-    {
-        let myPickerController = UIImagePickerController()
-        myPickerController.delegate = self;
-        myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-         myPickerController.allowsEditing = true
-        self.presentViewController(myPickerController, animated: true, completion: nil)
-        
-    }
-    
-    @IBOutlet weak var img2Loding: UIActivityIndicatorView!
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
-        
-        
-    {
-//        let imageView:[UIImageView] = [image0, image1, image2]
-        let img = info[UIImagePickerControllerOriginalImage] as? UIImage
+        print("Image selected")
+        let img = image
         loadingIndicators[btnIndex].startAnimating()
         loadingIndicators[btnIndex].hidden = false
-        Net.uploadImage(img!, index: btnIndex).onSuccess(callback: { (_) -> Void in
+        Net.uploadImage(img, index: btnIndex).onSuccess(callback: { (_) -> Void in
             Net.me().onSuccess(callback: {(user) -> Void in
                 UserProfile.userProfile.user = user
                 FBEvent.profileReceived(user)
+                //refresh profile image
+                if user.profileMainImage != nil
+                {
+                    UserProfile.saveMainPictureUrl(user.profileMainImage!)
+                }
                 self.configure()
                 self.loadingIndicators[self.btnIndex].stopAnimating()
                 self.loadingIndicators[self.btnIndex].hidden = true
@@ -337,11 +309,113 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
             self.loadingIndicators[self.btnIndex].stopAnimating()
             self.loadingIndicators[self.btnIndex].hidden = true
         })
+
+    }
+    
+    func fusumaVideoCompleted(withFileURL fileURL: NSURL) {
+        print("video completed and output to file: \(fileURL)")
+//        self.fileUrlLabel.text = "file output to: \(fileURL.absoluteString)"
+    }
+    
+    func fusumaDismissedWithImage(image: UIImage) {
         
+        print("Called just after dismissed FusumaViewController")
+    }
+    
+    func fusumaCameraRollUnauthorized() {
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        print("Camera roll unauthorized")
+        
+        let alert = UIAlertController(title: "Access Requested", message: "Saving image needs to access your photo album", preferredStyle: .Alert)
+        
+        alert.addAction(UIAlertAction(title: "Settings", style: .Default, handler: { (action) -> Void in
+            
+            if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
+                UIApplication.sharedApplication().openURL(url)
+            }
+            
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) -> Void in
+            
+        }))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func fusumaClosed() {
+        
+        print("Called when the close button is pressed")
+    }
+
+    func addBtn_Click(btnIndex:Int)
+    {
         
     }
+    
+//    func takePhoto()
+//    {
+//        let imagePicker = UIImagePickerController()
+//        if(UIImagePickerController.isSourceTypeAvailable(.Camera)){
+//            if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear)==nil{
+//                //                Alert.Warning(self,message: "Rear Camera doesn't exist Application can not access the camera")
+//                
+//            }else
+//            {
+//                imagePicker.sourceType = .Camera
+//                imagePicker.allowsEditing=true
+//                imagePicker.delegate=self
+//                
+//                presentViewController(imagePicker, animated: true, completion: {})
+//                
+//            }
+//            
+//        }else{
+//            
+//        }
+//    }
+    
+//    func gallery()
+//    {
+//        let myPickerController = UIImagePickerController()
+//        myPickerController.delegate = self;
+//        myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+//        myPickerController.allowsEditing = true
+//        self.presentViewController(myPickerController, animated: true, completion: nil)
+//        
+//    }
+    
+    @IBOutlet weak var img2Loding: UIActivityIndicatorView!
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+//        
+//        
+//    {
+//        //        let imageView:[UIImageView] = [image0, image1, image2]
+//        let img = info[UIImagePickerControllerOriginalImage] as? UIImage
+//        loadingIndicators[btnIndex].startAnimating()
+//        loadingIndicators[btnIndex].hidden = false
+//        Net.uploadImage(img!, index: btnIndex).onSuccess(callback: { (_) -> Void in
+//            Net.me().onSuccess(callback: {(user) -> Void in
+//                UserProfile.userProfile.user = user
+//                FBEvent.profileReceived(user)
+//                //refresh profile image
+//                if user.profileMainImage != nil
+//                {
+//                    UserProfile.saveMainPictureUrl(user.profileMainImage!)
+//                }
+//                self.configure()
+//                self.loadingIndicators[self.btnIndex].stopAnimating()
+//                self.loadingIndicators[self.btnIndex].hidden = true
+//            })
+//        }).onFailure(callback: { (_) -> Void in
+//            self.loadingIndicators[self.btnIndex].stopAnimating()
+//            self.loadingIndicators[self.btnIndex].hidden = true
+//        })
+//        
+//        
+//        self.dismissViewControllerAnimated(true, completion: nil)
+//        
+//    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -365,7 +439,7 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
         let contentInset:UIEdgeInsets = UIEdgeInsetsZero
         self.scrollView.contentInset = contentInset
     }
-  
+    
     @IBAction func saveAction(sender: AnyObject) {
         let name = textInputs[0].text
         let phoneNumber = textInputs[1].text
@@ -378,8 +452,10 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
         let pop = popCheck.isOn() ? "1" : "0"
         let both = bothCheck.isOn() ? "1" : "0"
         let weight = weightTextView.text
-        let params = [ AYNet.USERNAME: name as! AnyObject,
-                       AYNet.USERFACEBOOKID: UserProfile.userProfile.user?.facebookid as! AnyObject,
+        if let user = UserProfile.currentUser()
+        {
+            let params = [ AYNet.USERNAME: name as! AnyObject,
+                       AYNet.USERFACEBOOKID: user.facebookid as! AnyObject,
                        AYNet.KEY_PHONENUMBER: phoneNumber as! AnyObject,
                        AYNet.KEY_DETAIL: detail as! AnyObject,
                        AYNet.KEY_FLY: fly as AnyObject,
@@ -390,61 +466,55 @@ AVAudioPlayerDelegate, AVAudioRecorderDelegate, MPMediaPickerControllerDelegate,
                        AYNet.KEY_POP: pop as AnyObject,
                        AYNet.KEY_BOTH: both as AnyObject,
                        AYNet.KEY_ACROTYPE: weight as! AnyObject,
-                       AYNet.USERMAINIMAGEURL: UserProfile.userProfile.user?.profileMainImage as! AnyObject]
+                       AYNet.USERMAINIMAGEURL: user.profileMainImage as! AnyObject]
+        MRProgressOverlayView.dismissOverlayForView(FBoxHelper.getWindow(), animated: true)
         Net.requestServer(AYNet.UPLOADPROFILE_URL, params: params).onSuccess(callback: { (enabled) -> Void in
             Net.me().onSuccess(callback: {(user) -> Void in
                 UserProfile.userProfile.user = user
+                //refresh profile image
+                if user.profileMainImage != nil
+                {
+                    UserProfile.saveMainPictureUrl(user.profileMainImage!)
+                }
                 FBEvent.profileReceived(user)
             })
-
+            MRProgressOverlayView.dismissOverlayForView(FBoxHelper.getWindow(), animated: true)
             self.dismissViewControllerAnimated(true, completion: nil)
         }).onFailure { (error) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
-        }
-
-        
-    }
-    
-    //** media libray
-    func displayMediaPickerAndPlayItem(){
-        
-        mediaPicker = MPMediaPickerController(mediaTypes: .AnyAudio)
-        
-        if let picker = mediaPicker{
-            
-            
-            print("Successfully instantiated a media picker")
-            picker.delegate = self
-            picker.allowsPickingMultipleItems = true
-            picker.showsCloudItems = true
-            picker.prompt = "Pick a song please..."
-            view.addSubview(picker.view)
-            
-            presentViewController(picker, animated: true, completion: nil)
-            
-        } else {
-            print("Could not instantiate a media picker")
+            MRProgressOverlayView.dismissOverlayForView(FBoxHelper.getWindow(), animated: true)
         }
         
+        }
     }
     
-    func mediaPicker(mediaPicker: MPMediaPickerController,
-        didPickMediaItems mediaItemCollection: MPMediaItemCollection){
-            
-            print("Media Picker returned")
-
-            
-    }
+//    //** media libray
+//    func displayMediaPickerAndPlayItem(){
+//        
+//        mediaPicker = MPMediaPickerController(mediaTypes: .AnyAudio)
+//        
+//        if let picker = mediaPicker{
+//            
+//            
+//            print("Successfully instantiated a media picker")
+//            picker.delegate = self
+//            picker.allowsPickingMultipleItems = true
+//            picker.showsCloudItems = true
+//            picker.prompt = "Pick a song please..."
+//            view.addSubview(picker.view)
+//            
+//            presentViewController(picker, animated: true, completion: nil)
+//            
+//        } else {
+//            print("Could not instantiate a media picker")
+//        }
+//        
+//    }
     
-    func mediaPickerDidCancel(mediaPicker: MPMediaPickerController) {
-        /* The media picker was cancelled */
-        print("Media Picker was cancelled")
-        mediaPicker.dismissViewControllerAnimated(true, completion: nil)
-    }
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-
+    
 }

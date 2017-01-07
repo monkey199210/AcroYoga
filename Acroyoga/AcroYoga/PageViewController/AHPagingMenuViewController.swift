@@ -533,7 +533,7 @@ class AHPagingMenuViewController: UIViewController, UIScrollViewDelegate
                     title.textColor = (self.changeColor! ? (count == self.currentPage ? self.selectedColor: self.dissectedColor) :  self.selectedColor)
                 }
                 
-                count++
+                count += 1
             }
             self.arrowLeft?.tintColor = (self.changeColor! ? self.dissectedColor :  self.selectedColor);
             self.arrowRight?.tintColor = (self.changeColor! ? self.dissectedColor :  self.selectedColor);
@@ -559,7 +559,7 @@ class AHPagingMenuViewController: UIViewController, UIScrollViewDelegate
                     title.textColor = (self.changeColor! ? (count == self.currentPage ? self.selectedColor: self.dissectedColor) :  self.selectedColor)
                 }
                 
-                count++
+                count += 1
             }
             self.arrowLeft?.tintColor = (self.changeColor! ? self.dissectedColor :  self.selectedColor);
             self.arrowRight?.tintColor = (self.changeColor! ? self.dissectedColor :  self.selectedColor);
@@ -582,7 +582,7 @@ class AHPagingMenuViewController: UIViewController, UIScrollViewDelegate
                     titleView.sizeToFit()
                 }
                 
-                count++
+                count += 1
             }
         }
     }
@@ -603,7 +603,7 @@ class AHPagingMenuViewController: UIViewController, UIScrollViewDelegate
                     titleView.sizeToFit()
                 }
                 
-                count++
+                count += 1
             }
         }
     }
@@ -647,7 +647,7 @@ class AHPagingMenuViewController: UIViewController, UIScrollViewDelegate
                     titleView.sizeToFit()
                 }
                 
-                count++
+                count += 1
             }
         }
         
@@ -746,7 +746,7 @@ class AHPagingMenuViewController: UIViewController, UIScrollViewDelegate
                     titleView.transform = CGAffineTransformMakeScale(transform, transform);
                 }
                 
-                count++;
+                count += 1;
             }
             
         }

@@ -1,13 +1,15 @@
 //
 //  LoginViewController.swift
-//  TurnUP
+//  AcroYoga
 //
 //  Created by SCAR on 3/18/16.
 //  Copyright © 2016 ku. All rights reserved.
 //
 
 import UIKit
-class LoginViewController: UIViewController ,UIScrollViewDelegate,FBLoginViewDelegate{
+import MRProgress
+import FBSDKLoginKit
+class LoginViewController: UIViewController ,UIScrollViewDelegate{
 
 //    @IBOutlet weak var scrollView: UIScrollView!
 //    
@@ -59,12 +61,12 @@ class LoginViewController: UIViewController ,UIScrollViewDelegate,FBLoginViewDel
    func loginFaceBook()
     {
        
-        if(FB.hasActiveSession()){
-            print("FACEBOOK ACTIVE SESSION");
-            self.success()
-        }else{
-            print("FACEBOOK DOES NOT HAVE ACTIVE SESSION");
-        }
+//        if(FB.hasActiveSession()){
+//            print("FACEBOOK ACTIVE SESSION");
+//            self.success()
+//        }else{
+//            print("FACEBOOK DOES NOT HAVE ACTIVE SESSION");
+//        }
         
     }
     override func viewDidAppear(animated: Bool) {
@@ -102,7 +104,7 @@ class LoginViewController: UIViewController ,UIScrollViewDelegate,FBLoginViewDel
         // Set self as the delegate of the scrollview.
         
         // Load the TestView view from the TestView.xib file and configure it properly.
-        for var i=0; i<totalPages; ++i {
+        for i in 0 ..< totalPages {
             // Load the TestView view.
             let testView = NSBundle.mainBundle().loadNibNamed("TestView", owner: self, options: nil)[0] as! UIView
             
@@ -151,23 +153,82 @@ class LoginViewController: UIViewController ,UIScrollViewDelegate,FBLoginViewDel
     
     @IBAction func facebookLogin(){
         
-        FB.login(self.handleLogin);
+        let login = FBSDKLoginManager()
+        let defaults = NSUserDefaults.standardUserDefaults()
+
+        //                defaults.setObject(name , forKey: "username")
+        //                defaults.setObject(facebookProfileUrl, forKey: "userImage")
+        //                defaults.synchronize()
+        login.logInWithReadPermissions(["user_about_me", "user_friends"], fromViewController: self) { [unowned self] (result, error) -> Void in
+            if result != nil && error == nil {
+//                Webservice.showBlocking(true)
+                let requestMe = FBSDKGraphRequest.init(graphPath: "me", parameters: ["fields": "id, name"])
+                let connection = FBSDKGraphRequestConnection()
+                connection.addRequest(requestMe, completionHandler: { (connection, result, error) -> Void in
+                    if let accessToken = FBSDKAccessToken.currentAccessToken() where result != nil && error == nil {
+//                        self.facebookAccessToken = accessToken.tokenString
+                        print(accessToken)
+                        if let uID = result["id"] as? String {
+                            defaults.setObject( uID, forKey: "userid")
+                            if let name = result["name"] as? String {
+                                defaults.setObject(name , forKey: "username")
+                            }
+                            defaults.synchronize()
+                        }
+                        let height = Int(FBoxHelper.getScreenSize().height)
+                        let width = Int(FBoxHelper.getScreenSize().width)
+                        let request = FBSDKGraphRequest(graphPath: "/me/picture", parameters: ["height":"\(height)", "redirect":"0", "width":"\(width)"])
+                        request.startWithCompletionHandler({ (connection, result, error) -> Void in
+                            if result != nil && error == nil {
+                                if let data = result["data"] as? NSDictionary {
+                                    if let url = data["url"] as? String {
+                                        defaults.setObject(url, forKey: "userImage")
+                                        defaults.synchronize()
+                                        self.success()
+                                    }
+                                }
+                            }else if error != nil {
+                                print(error)
+                                
+                            }
+                        })
+                    }else if error != nil {
+                        print(error)
+//                        Webservice.closeBlocking(true)
+                    }
+                })
+                connection.start()
+            }else if error != nil {
+                print(error)
+            }
+        }
+
 //        self.success()
     }
     
     func handleLogin(){
         print("SUCCESS");
-        FB.getInfo(self.success)
-        
-
+//        FB.getInfo(self.success)
     }
     
     func success()
     {
+         Webservice.showBlocking(true)
         Net.requestUser().onSuccess(callback: { (enabled) -> Void in
+            MRProgressOverlayView.dismissOverlayForView(FBoxHelper.getWindow(), animated: true)
+            
+            ////
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setObject("1", forKey: "login")
+            defaults.synchronize()
+            
+            ////
             let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
             
-            appDelegate!.loadPageController()
+            appDelegate!.loadPageController(false)
+        }).onFailure(callback: { (_) -> Void in
+            print("failed")
+            Webservice.closeBlocking(true)
         })
     }
 

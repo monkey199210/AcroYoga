@@ -15,40 +15,10 @@ import Haneke
 class UserProfile {
     static let userProfile = UserProfile()
     init(){
-//        self.needToLoadImage = self.readNeedToLoadImage()
-//        FBEvent.onAuthenticated().listen(self) { [unowned self] (isAuthenticated) -> Void in
-//            if isAuthenticated {
-//                //auth done
-//                if let profileImage = self.needToLoadImage {
-//                    Net.uploadImage(profileImage).onSuccess(callback: { (_) -> Void in
-//                        FBEvent.pictChanged(true)
-//                        self.removeNeedToLoadImage()
-//                    })
-//                }
-//                Net.me().onSuccess(callback: { (user) -> Void in
-//                    UserProfile.userProfile.user = user
-//                    FBEvent.profileReceived(user)
-//                    if let email = user.general.email.email {
-//                        Crashlytics.sharedInstance().setUserEmail(email)
-//                    }
-//                    Crashlytics.sharedInstance().setUserIdentifier(user.general.username)
-//                    Crashlytics.sharedInstance().setUserName(user.general.username)
-//                })
-//            }else{
-//                //logout done
-//                UserProfile.clearCachedItems()
-//            }
-//        }
-//        FBEvent.onProfileUpdated().listen(self) { (_) -> Void in
-//            Net.me().onSuccess(callback: { (user) -> Void in
-//                UserProfile.userProfile.user = user
-//                FBEvent.profileReceived(user)
-//            })
-//        }
         Net.me().onSuccess(callback: {(user) -> Void in
             UserProfile.userProfile.user = user
             FBEvent.profileReceived(user)
-        })
+        })	
         FBEvent.onProfileUpdated().listen(self) { (_) -> Void in
             Net.me().onSuccess(callback: { (user) -> Void in
                 UserProfile.userProfile.user = user
@@ -57,7 +27,7 @@ class UserProfile {
         }
 
     }
-    
+    var token:String!
     private static let kIsUserHavePhotoKey = "kIsUserHavePhotoKey"
     class func isIHavePhoto() -> Bool {
         let userdefaults = NSUserDefaults.standardUserDefaults()
@@ -113,6 +83,7 @@ class UserProfile {
                     }
                     isMeRequesting = false
                 }).onFailure(callback: { (error) -> Void in
+//                    UIAlertView(title: "ERROR", message: error.localizedDescription, delegate: nil, cancelButtonTitle: "OK").show()
                     isMeRequesting = false
                 })
             }
@@ -166,7 +137,7 @@ class UserProfile {
     }
   private static let kMainImageCache = "profileImagesCache"
     private static let kMainImageUrl = "userImage"
-    class private func saveMainPictureUrl(url: String) {
+    class  func saveMainPictureUrl(url: String) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setObject(url, forKey: kMainImageUrl)
         userDefaults.synchronize()

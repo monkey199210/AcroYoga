@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "354"
-            endingLineNumber = "354"
-            landmarkName = "keyboardWillShow(_:)"
-            landmarkType = "5">
+            startingLineNumber = "361"
+            endingLineNumber = "361"
+            landmarkName = "EditViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "365"
-            endingLineNumber = "365"
-            landmarkName = "keyboardWillHide(_:)"
-            landmarkType = "5">
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "EditViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/ProfileDetailViewController.swift"
-            timestampString = "495220894.287339"
+            timestampString = "496637569.438879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -54,47 +54,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/LoginViewController.swift"
-            timestampString = "495186982.948371"
+            timestampString = "497237837.06477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "success()"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AcroYoga.LoginViewController.success () -&gt; ()"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
-                  timestampString = "495209494.26333"
+                  timestampString = "503261915.726807"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "167"
-                  endingLineNumber = "167"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "217"
+                  endingLineNumber = "217"
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AcroYoga.LoginViewController.(success () -&gt; ()).(closure #1)"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
-                  timestampString = "495209494.26393"
+                  timestampString = "503261915.727142"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "168"
-                  endingLineNumber = "168"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "19">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -105,28 +105,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AcroYoga/FB/Facebook.swift"
-            timestampString = "495082036.291983"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "parseResult(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AcroYoga/AppDelegate.swift"
-            timestampString = "495079832.163015"
+            timestampString = "497234170.112831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -134,79 +118,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/FB/Facebook.swift"
-            timestampString = "495099885.503038"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "getFacebookFriends()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/FB/Facebook.swift"
-            timestampString = "495099899.406865"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "getFacebookFriends()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.Facebook.getFacebookFriends () -&gt; ()"
-                  moduleName = "AcroYoga"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/FB/Facebook.swift"
-                  timestampString = "495209494.279696"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "248">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.Facebook.(getFacebookFriends () -&gt; ()).(closure #1)"
-                  moduleName = "AcroYoga"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/FB/Facebook.swift"
-                  timestampString = "495209494.280351"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/LoginViewController.swift"
-            timestampString = "495186811.35303"
+            timestampString = "497237837.06477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "success()"
             landmarkType = "5">
             <Locations>
@@ -246,15 +166,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/Model/UserProfile.swift"
-            timestampString = "495209172.879936"
+            timestampString = "496579672.36685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "requestUser()"
             landmarkType = "5">
          </BreakpointContent>
@@ -262,59 +182,59 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/Webservice/Webservices.swift"
-            timestampString = "495310693.405008"
+            timestampString = "501864076.400029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "mapResult(_:promise:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static AcroYoga.Webservice.uplaodImageData &lt;A where A: Genome.BasicMappable&gt; (Swift.String, postData : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, animated : Swift.Bool) -&gt; BrightFutures.Future&lt;AcroYoga.WebResult&lt;A&gt;, __ObjC.NSError&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Webservices.swift"
+                  timestampString = "495909757.761827"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "237">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static AcroYoga.Webservice.(uplaodImageData &lt;A where A: Genome.BasicMappable&gt; (Swift.String, postData : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, animated : Swift.Bool) -&gt; BrightFutures.Future&lt;AcroYoga.WebResult&lt;A&gt;, __ObjC.NSError&gt;).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Webservices.swift"
+                  timestampString = "495909757.761942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "185">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/Webservice/Webservices.swift"
-            timestampString = "495310693.405008"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "mapResult(_:promise:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/Webservice/Webservices.swift"
-            timestampString = "495310693.405008"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "mapResult(_:promise:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/Webservice/Webservices.swift"
-            timestampString = "495310693.405008"
+            timestampString = "501864076.400029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
@@ -326,92 +246,109 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/Webservice/Webservices.swift"
+            timestampString = "501864076.400029"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "mapResult(_:promise:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/Webservice/Webservices.swift"
+            timestampString = "501864076.400029"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "mapResult(_:promise:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495199167.336555"
+            timestampString = "496569448.439177"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "dataSource"
-            landmarkType = "19">
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.MainViewController.(dataSource in _BC683982EEB07B00CB1B1E9C51C20D59).getter : Swift.Array&lt;__ObjC.UIImage&gt;"
+                  symbolName = "AcroYoga.MainViewController.locationManager.getter : __ObjC.CLLocationManager"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.141713"
+                  timestampString = "495909757.764167"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "35">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.MainViewController.(dataSource in _BC683982EEB07B00CB1B1E9C51C20D59).setter : Swift.Array&lt;__ObjC.UIImage&gt;"
+                  symbolName = "AcroYoga.MainViewController.locationManager.setter : __ObjC.CLLocationManager"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.141889"
+                  timestampString = "495909757.764321"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "80">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "65">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AcroYoga.MainViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; AcroYoga.MainViewController"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.142077"
+                  timestampString = "495909757.764421"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "1892">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "3168">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AcroYoga.MainViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AcroYoga.MainViewController&gt;"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.142359"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "1840">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.MainViewController.((dataSource in _BC683982EEB07B00CB1B1E9C51C20D59) : Swift.Array&lt;__ObjC.UIImage&gt;).(variable initialization expression).(closure #1)"
-                  moduleName = "AcroYoga"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.142589"
+                  timestampString = "495909757.764509"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
                   endingLineNumber = "32"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "3071">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -419,15 +356,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/Model/UserProfile.swift"
-            timestampString = "495209172.879936"
+            timestampString = "496579672.36685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "currentUser()"
             landmarkType = "5">
          </BreakpointContent>
@@ -435,79 +372,77 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495209418.513921"
+            timestampString = "496569448.439177"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "dataSource"
-            landmarkType = "19">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495209911.830994"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "likeAction(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/Webservice/Webservices.swift"
-            timestampString = "495310693.405008"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "uplaodImageData(_:postData:animated:)"
-            landmarkType = "5">
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static AcroYoga.Webservice.uplaodImageData &lt;A where A: Genome.BasicMappable&gt; (Swift.String, postData : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, animated : Swift.Bool) -&gt; BrightFutures.Future&lt;AcroYoga.WebResult&lt;A&gt;, __ObjC.NSError&gt;"
+                  symbolName = "AcroYoga.MainViewController.latitude.getter : Swift.String"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Webservices.swift"
-                  timestampString = "495316181.14895"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "495909757.767821"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
-                  offsetFromSymbolStart = "256">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "53">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static AcroYoga.Webservice.(uplaodImageData &lt;A where A: Genome.BasicMappable&gt; (Swift.String, postData : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, animated : Swift.Bool) -&gt; BrightFutures.Future&lt;AcroYoga.WebResult&lt;A&gt;, __ObjC.NSError&gt;).(closure #1)"
+                  symbolName = "AcroYoga.MainViewController.latitude.setter : Swift.String"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Webservices.swift"
-                  timestampString = "495316181.149177"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "495909757.767934"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
-                  offsetFromSymbolStart = "156">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.MainViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; AcroYoga.MainViewController"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "495909757.768025"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "3242">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.MainViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AcroYoga.MainViewController&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "495909757.768107"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "3145">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -515,16 +450,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AcroYoga/Webservice/Webservices.swift"
-            timestampString = "495310693.405008"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "501864076.400029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "uplaodImageData(_:postData:animated:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "rightButtonTapped()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -535,43 +470,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "fusumaCameraRollUnauthorized()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/Webservice/Net.swift"
+            timestampString = "501737527.507983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "NewMessage(_:)"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.EditViewController.imagePickerController (__ObjC.UIImagePickerController, didFinishPickingMediaWithInfo : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()"
+                  symbolName = "static AcroYoga.Net.NewMessage (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; BrightFutures.Future&lt;Swift.Array&lt;AcroYoga.AYMessage&gt;, __ObjC.NSError&gt;"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
-                  timestampString = "495316181.151483"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Net.swift"
+                  timestampString = "495909757.772695"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "328"
-                  endingLineNumber = "328"
-                  offsetFromSymbolStart = "872">
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "107">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.EditViewController.(imagePickerController (__ObjC.UIImagePickerController, didFinishPickingMediaWithInfo : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()).(closure #1)"
+                  symbolName = "static AcroYoga.Net.(NewMessage (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; BrightFutures.Future&lt;Swift.Array&lt;AcroYoga.AYMessage&gt;, __ObjC.NSError&gt;).(closure #1)"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
-                  timestampString = "495316181.151725"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Net.swift"
+                  timestampString = "495909757.772816"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "329"
-                  endingLineNumber = "329"
-                  offsetFromSymbolStart = "24">
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -582,28 +533,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AcroYoga/Webservice/Net.swift"
-            timestampString = "495310693.405008"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "uploadImage(_:index:progressCallback:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AcroYoga/Webservice/ImageUploader.swift"
-            timestampString = "495266652.064973"
+            timestampString = "495910225.596366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "uploadImage(_:params:imageData:progressCallback:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -615,23 +550,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/Webservice/ImageUploader.swift"
-            timestampString = "495266674.507321"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "uploadImage(_:params:imageData:progressCallback:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/Webservice/ImageUploader.swift"
-            timestampString = "495266677.70552"
+            timestampString = "495910225.596366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -646,28 +565,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495268374.649258"
+            filePath = "AcroYoga/Webservice/ImageUploader.swift"
+            timestampString = "495910225.596366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "likeAction(_:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "uploadImage(_:params:imageData:progressCallback:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "501864076.400029"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "undoButtonTapped()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/Model/UserProfile.swift"
-            timestampString = "495268435.777099"
+            timestampString = "496579672.36685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "saveMainPictureUrl(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -675,15 +610,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/Model/UserProfile.swift"
-            timestampString = "495268535.966938"
+            timestampString = "496579672.36685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "getMainPict(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -695,43 +630,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "329"
-            endingLineNumber = "329"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "336"
+            endingLineNumber = "336"
+            landmarkName = "fusumaCameraRollUnauthorized()"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.EditViewController.(imagePickerController (__ObjC.UIImagePickerController, didFinishPickingMediaWithInfo : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()).(closure #1)"
+                  symbolName = "AcroYoga.EditViewController.fusumaCameraRollUnauthorized () -&gt; ()"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
-                  timestampString = "495316181.161179"
+                  timestampString = "503261915.732528"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "329"
-                  endingLineNumber = "329"
-                  offsetFromSymbolStart = "24">
+                  startingLineNumber = "337"
+                  endingLineNumber = "337"
+                  offsetFromSymbolStart = "546">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.EditViewController.(imagePickerController (__ObjC.UIImagePickerController, didFinishPickingMediaWithInfo : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()).(closure #1).(closure #1)"
+                  symbolName = "AcroYoga.EditViewController.(fusumaCameraRollUnauthorized () -&gt; ()).(closure #1)"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
-                  timestampString = "495316181.161374"
+                  timestampString = "503261915.732654"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "330"
-                  endingLineNumber = "330"
-                  offsetFromSymbolStart = "1320">
+                  startingLineNumber = "337"
+                  endingLineNumber = "337"
+                  offsetFromSymbolStart = "211">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -743,13 +678,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
+            landmarkName = "fusumaCameraRollUnauthorized()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/EditViewController.swift"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "337"
             endingLineNumber = "337"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkName = "fusumaCameraRollUnauthorized()"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.fusumaCameraRollUnauthorized () -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.734347"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "337"
+                  endingLineNumber = "337"
+                  offsetFromSymbolStart = "546">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.(fusumaCameraRollUnauthorized () -&gt; ()).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.734463"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "337"
+                  endingLineNumber = "337"
+                  offsetFromSymbolStart = "211">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -759,29 +742,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495283975.561111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "configureWithUser(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.configureWithUser (AcroYoga.AYUser) -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.735666"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "2659">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.configureWithUser (AcroYoga.AYUser) -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.735783"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "2740">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -791,13 +790,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "381"
-            endingLineNumber = "381"
-            landmarkName = "saveAction(_:)"
-            landmarkType = "5">
+            startingLineNumber = "388"
+            endingLineNumber = "388"
+            landmarkName = "EditViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.img2Loding.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIActivityIndicatorView&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.737082"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.img2Loding.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIActivityIndicatorView&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.737207"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; AcroYoga.EditViewController"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.737361"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "1317">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AcroYoga.EditViewController&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.737471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "1213">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -807,13 +868,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "380"
-            endingLineNumber = "380"
-            landmarkName = "saveAction(_:)"
-            landmarkType = "5">
+            startingLineNumber = "387"
+            endingLineNumber = "387"
+            landmarkName = "EditViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.img2Loding.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIActivityIndicatorView&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.739379"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.img2Loding.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIActivityIndicatorView&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.739502"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; AcroYoga.EditViewController"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.739603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "1317">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AcroYoga.EditViewController&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.739698"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "388"
+                  endingLineNumber = "388"
+                  offsetFromSymbolStart = "1213">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -828,55 +951,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "requestUser()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static AcroYoga.Net.requestUser () -&gt; BrightFutures.Future&lt;Swift.Bool, __ObjC.NSError&gt;"
-                  moduleName = "AcroYoga"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Net.swift"
-                  timestampString = "495316181.168779"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "576">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static AcroYoga.Net.(requestUser () -&gt; BrightFutures.Future&lt;Swift.Bool, __ObjC.NSError&gt;).(closure #1)"
-                  moduleName = "AcroYoga"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Webservice/Net.swift"
-                  timestampString = "495316181.168981"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/Webservice/Net.swift"
-            timestampString = "495301384.872783"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "requestUser()"
+            landmarkName = "getUserInfoById(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -892,85 +967,84 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "requestUser()"
+            landmarkName = "getUserInfoById(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495314377.613396"
+            timestampString = "501864076.400029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495314407.229929"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "kolodaNumberOfCards(_:)"
-            landmarkType = "5">
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AcroYoga.MainViewController.kolodaNumberOfCards (Koloda.KolodaView) -&gt; Swift.UInt"
+                  symbolName = "AcroYoga.MainViewController.photoView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.172076"
+                  timestampString = "495909757.787905"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "181"
-                  endingLineNumber = "181"
-                  offsetFromSymbolStart = "32">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "27">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "protocol witness for Koloda.KolodaViewDataSource.kolodaNumberOfCards (Koloda.KolodaView) -&gt; Swift.UInt in conformance AcroYoga.MainViewController : Koloda.KolodaViewDataSource in AcroYoga"
+                  symbolName = "AcroYoga.MainViewController.photoView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.172228"
+                  timestampString = "495909757.788018"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "42">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "dynamic AcroYoga.MainViewController.kolodaNumberOfCards (Koloda.KolodaView) -&gt; Swift.UInt"
+                  symbolName = "AcroYoga.MainViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; AcroYoga.MainViewController"
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
-                  timestampString = "495316181.172334"
+                  timestampString = "495909757.788112"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "3460">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.MainViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AcroYoga.MainViewController&gt;"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "495909757.788235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "3363">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -978,64 +1052,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495314408.030684"
+            timestampString = "502024578.536025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "kolodaNumberOfCards(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495314409.928706"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "koloda(_:viewForCardAtIndex:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495314438.964684"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "kolodaDidRunOutOfCards(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
-            timestampString = "495315903.331837"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "koloda(_:viewForCardOverlayAtIndex:)"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "likeAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1062,12 +1088,12 @@
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Flipview/ExampleOverlayView.swift"
-                  timestampString = "495316181.179312"
+                  timestampString = "503261915.744226"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
                   endingLineNumber = "18"
-                  offsetFromSymbolStart = "364">
+                  offsetFromSymbolStart = "288">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1077,12 +1103,12 @@
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Flipview/ExampleOverlayView.swift"
-                  timestampString = "495316181.179443"
+                  timestampString = "503261915.744361"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "672">
+                  offsetFromSymbolStart = "555">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1092,12 +1118,12 @@
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Flipview/ExampleOverlayView.swift"
-                  timestampString = "495316181.179552"
+                  timestampString = "503261915.744467"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "132">
+                  offsetFromSymbolStart = "104">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1107,12 +1133,12 @@
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Flipview/ExampleOverlayView.swift"
-                  timestampString = "495316181.179698"
+                  timestampString = "503261915.744566"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "76">
+                  offsetFromSymbolStart = "67">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1122,12 +1148,12 @@
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Flipview/ExampleOverlayView.swift"
-                  timestampString = "495316181.179806"
+                  timestampString = "503261915.744663"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "60">
+                  offsetFromSymbolStart = "28">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1137,14 +1163,780 @@
                   moduleName = "AcroYoga"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/Flipview/ExampleOverlayView.swift"
-                  timestampString = "495316181.179904"
+                  timestampString = "503261915.744757"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
                   endingLineNumber = "20"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/EditViewController.swift"
+            timestampString = "495921890.625716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
+            landmarkName = "fusumaImageSelected(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.fusumaImageSelected (__ObjC.UIImage) -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.747213"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "295"
+                  endingLineNumber = "295"
+                  offsetFromSymbolStart = "698">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.(fusumaImageSelected (__ObjC.UIImage) -&gt; ()).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.747557"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "296"
+                  endingLineNumber = "296"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/Webservice/Net.swift"
+            timestampString = "501737527.507983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "uploadImage(_:index:progressCallback:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/Chat/ChatViewController.swift"
+            timestampString = "496637569.438879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "438"
+            endingLineNumber = "438"
+            landmarkName = "scrollToBottom()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/Chat/ChatViewController.swift"
+            timestampString = "496569448.439177"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
+            landmarkName = "sendAction(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.ChatViewController.(sendAction (Swift.AnyObject) -&gt; ()).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/Chat/ChatViewController.swift"
+                  timestampString = "503261915.751226"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "312"
+                  endingLineNumber = "312"
+                  offsetFromSymbolStart = "1202">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.ChatViewController.(sendAction (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/Chat/ChatViewController.swift"
+                  timestampString = "503261915.751397"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "313"
+                  endingLineNumber = "313"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/AppDelegate.swift"
+            timestampString = "497234170.112831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "getStatus()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/InviteFaceBookFriendViewController.swift"
+            timestampString = "497237837.06477"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/InviteFaceBookFriendViewController.swift"
+            timestampString = "497237129.754441"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "searchUsers()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "searchUsers()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "searchUsers()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.MainViewController.searchUsers () -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "501738972.066841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "8672">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.MainViewController.(searchUsers () -&gt; ()).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "501738972.066996"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
                   offsetFromSymbolStart = "16">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "476"
+            endingLineNumber = "476"
+            landmarkName = "kolodaNumberOfCards(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "471"
+            endingLineNumber = "471"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "474"
+            endingLineNumber = "474"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/LoginViewController.swift"
+            timestampString = "497233856.660865"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "facebookLogin()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.facebookLogin () -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "498014651.055757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.(facebookLogin () -&gt; ()).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "498014651.055911"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.(facebookLogin () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "498014651.056075"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.(facebookLogin () -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "498014651.056199"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/LoginViewController.swift"
+            timestampString = "497237837.06477"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "facebookLogin()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.(facebookLogin () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "497237838.390547"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "717">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.(facebookLogin () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "497237838.390671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "1520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/LoginViewController.swift"
+            timestampString = "497234328.014051"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "facebookLogin()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.(facebookLogin () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "498014651.057848"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.LoginViewController.(facebookLogin () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/LoginViewController.swift"
+                  timestampString = "498014651.058022"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/LoginViewController.swift"
+            timestampString = "497237837.06477"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "facebookLogin()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/Webservice/Net.swift"
+            timestampString = "501737527.507983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "requestUser()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/AppDelegate.swift"
+            timestampString = "497235333.85086"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "application(_:didRegisterForRemoteNotificationsWithDeviceToken:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/LoginViewController.swift"
+            timestampString = "498014706.516146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "success()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/Webservice/Net.swift"
+            timestampString = "498014740.331438"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "requestUser()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/LocationViewController.swift"
+            timestampString = "501738506.640775"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "317"
+            endingLineNumber = "317"
+            landmarkName = "getLatLngForZip(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "searchUsers()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
+            landmarkName = "getLatLngForZip(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.MainViewController.getLatLngForZip (Swift.String) -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "503261915.757453"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "326"
+                  endingLineNumber = "326"
+                  offsetFromSymbolStart = "2081">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.MainViewController.getLatLngForZip (Swift.String) -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/MainViewController.swift"
+                  timestampString = "503261915.757578"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "326"
+                  endingLineNumber = "326"
+                  offsetFromSymbolStart = "2384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "getLatLngForZip(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "searchUsers()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "pulseAction(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "pulseAction(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024578.536025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/MainViewController.swift"
+            timestampString = "502024536.005706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcroYoga/ViewControllers/InviteFaceBookFriendViewController.swift"
+            timestampString = "503261937.816822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

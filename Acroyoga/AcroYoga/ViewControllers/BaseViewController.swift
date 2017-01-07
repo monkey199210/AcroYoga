@@ -60,7 +60,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         btnShowMenu.tintColor = UIColor.whiteColor()
         btnShowMenu.setImage(UIImage(named:"menuIcon.png"), forState: UIControlState.Normal)
         btnShowMenu.frame = CGRectMake(0, 0, 30, 30)
-        btnShowMenu.addTarget(self, action: "onSlideMenuButtonPressed:", forControlEvents: UIControlEvents.TouchUpInside)
+        btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)
         customBarItem.tintColor = UIColor.whiteColor()
         self.navigationItem.leftBarButtonItem = customBarItem;

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "initImageViews()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,13 +26,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AcroYoga/ViewControllers/EditViewController.swift"
-            timestampString = "495300913.028109"
+            timestampString = "495921890.625716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "initImageViews()"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.initImageViews () -&gt; ()"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.763127"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "4889">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcroYoga.EditViewController.(initImageViews () -&gt; ()).(closure #1)"
+                  moduleName = "AcroYoga"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruicaneira/Documents/Development/working/AcroYoga/Acroyoga/AcroYoga/ViewControllers/EditViewController.swift"
+                  timestampString = "503261915.763242"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

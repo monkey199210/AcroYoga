@@ -4,8 +4,18 @@ PODS:
     - Alamofire (~> 3.3)
   - AnimatedTextInput (0.3.2)
   - AsyncSwift (1.7.3)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
   - BrightFutures (4.1.0):
     - Result (~> 2.0)
+  - FBSDKCoreKit (4.14.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.14.0):
+    - FBSDKCoreKit
   - Genome (1.0.8)
   - HanekeSwift (0.10.1)
   - Koloda (3.1.1):
@@ -49,6 +59,8 @@ DEPENDENCIES:
   - AnimatedTextInput (from `../`)
   - AsyncSwift
   - BrightFutures
+  - FBSDKCoreKit
+  - FBSDKLoginKit
   - Genome (~> 1.0.0)
   - HanekeSwift
   - Koloda
@@ -65,7 +77,10 @@ SPEC CHECKSUMS:
   AlamofireImage: 3ccf3347d9ea24580dc11fb892770a0be6a29826
   AnimatedTextInput: f8ff703265355a50c404d6dcb06ef0f4470a3d35
   AsyncSwift: f3ad5dd077bbd1477e7573e87071a532fedaca1a
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   BrightFutures: e18b83fd6fa8562ceb9902ee609f0de23b0ee110
+  FBSDKCoreKit: 6e020b5db0b5bd1e01f5fb0902131befd129a502
+  FBSDKLoginKit: da563567a108050ef83739c8c8c001ee9e25fa13
   Genome: 20d8aa7b63728553aab26fef53ea8570a71ce2f1
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
   Koloda: 782e61549cafec9fd69fc70c4a8b54bce997894d
@@ -75,6 +90,6 @@ SPEC CHECKSUMS:
   Signals: d47128787e1675858f956556397e482fd667bd96
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: caba44a662c35ae17b93ee19323d7932de1950c5
+PODFILE CHECKSUM: e586a1659bc782152d636369935986b793b57ec1
 
 COCOAPODS: 1.0.1

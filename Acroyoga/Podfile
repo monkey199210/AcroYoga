@@ -13,5 +13,7 @@ pod 'SwiftyJSON'
 pod 'Signals', '~> 2.0'
 pod 'HanekeSwift'
 pod 'AsyncSwift'
-pod "Koloda"
+pod 'Koloda'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
 end
